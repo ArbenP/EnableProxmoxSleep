@@ -1,17 +1,29 @@
 # EnableProxmoxSleep
-A guide on how to enable, and how to put a Proxmox Server to Sleep/Suspend mode
+A simple guide on enabling and using sleep/suspend mode on a Proxmox server.
 
-First you enter the bash shell of the server and type in this command to enable putting sleep mode on.
-Hint: you only need to do this command ***once***
+**Enabling Sleep Mode**
 
-    systemctl unmask sleep.target suspend.target hibernate.target hybrid-sleep.target
+To allow your Proxmox server to enter sleep/suspend mode, open a bash shell and run the following command:
 
-Now once you have entered that command, run this command to put the server to sleep mode any time.
+```
+systemctl unmask sleep.target suspend.target hibernate.target hybrid-sleep.target
+```
 
-    systemctl suspend
+💡 **Note:** This command only needs to be run **once**.
 
-# Use cases
-I have added this command to my *iPhone*'s *Shortcuts* app to Suspend my server, so I can easily save power when I am not using it, and then able to wake the server, through Wake-On-Lan, all without physically pressing the power button on my home server.
 
-# If you found this useful, give it a star!
 
+**Suspending the Server**
+
+Once enabled, you can put your Proxmox server to sleep at any time using:
+```
+systemctl suspend
+```
+
+# Use Cases
+
+I have integrated this command into my _iPhone_’s _Shortcuts_ app, allowing me to suspend my server when not in use, reducing power consumption. I can then wake it remotely via **Wake-On-LAN**, eliminating the need to press the power button physically.
+
+# **⭐ Support**
+
+If you found this guide helpful, consider giving it a star!
