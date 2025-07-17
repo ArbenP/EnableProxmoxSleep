@@ -24,6 +24,3 @@ systemctl suspend
 
 I have integrated this command into my _iPhone_’s _Shortcuts_ app, allowing me to suspend my server when not in use, reducing power consumption. I can then wake it remotely via **Wake-On-LAN**, eliminating the need to press the power button physically.
 
-# **⭐ Support**
-
-If you found this guide helpful, consider giving it a star!
